@@ -1,0 +1,160 @@
+body {
+    max-width: 1240px;
+    margin: 0 auto;
+    background-color: #F3F1FF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 870px;
+    background-color: white;
+    padding: 30px;
+}
+
+hr {
+    margin: 0;
+}
+
+/* top-player */
+.top-player {
+    padding-bottom: 30px;
+}
+
+.player-title {
+    color: #562EFF;
+    font-size: 24px;
+    ;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 0;
+}
+
+.player {
+    display: flex;
+}
+
+.player img {
+    width: 20%;
+    height: auto;
+}
+
+
+.player h3 {
+    padding-left: 16px;
+    font-size: 18px;
+}
+
+/* top-blog */
+.blog-player {
+    display: grid;
+    grid-template-columns: repeat(2, 46.55%);
+    grid-gap: 26px 60px;
+}
+
+.blog {
+    display: flex;
+
+}
+
+.thumbnail img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog-info {
+    padding-left: 16px;
+}
+
+.blog-info h3 {
+    font-size: 20px;
+}
+
+.blog-info p {
+    color: #9F9F9F;
+}
+
+.blog-info a {
+    text-decoration: none;
+    color: #562EFF;
+}
+
+/* latest course */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 25.75%);
+    justify-content: space-between;
+}
+
+
+.course-banner img {
+    width: 224px;
+    height: 104px;
+}
+
+.info h3 {
+    font-size: 20px;
+}
+
+.info p {
+    color: #ED6B4F;
+    font-size: 14.69px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.icon span {
+    padding-left: 5px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+    font-size: 12px;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+    font-size: 12px;
+}
+
+.time {
+    font-size: 20px;
+    background-color: #FEE5DF;
+    padding: 5px 10px;
+    border-radius: 25px;
+    color: #F84A4D;
+    align-items: center;
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        width: 100vw;
+    }
+
+    .players,
+    .blog-player {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 10px;
+
+    }
+
+    .course-banner img {
+        width: 100vw;
+    }
+}
